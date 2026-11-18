@@ -3,25 +3,24 @@
 Установка одной командой:
 
 ```bash
+brew trust yumdaniil/prism-agent
 brew install --cask yumdaniil/prism-agent/prism-agent
 ```
+
+`brew trust` нужен один раз: Homebrew по умолчанию не доверяет сторонним тапам.
 
 Или по шагам:
 
 ```bash
 brew tap yumdaniil/prism-agent
+brew trust yumdaniil/prism-agent
 brew install --cask prism-agent
 ```
 
-Обновление:
+Обновление и удаление:
 
 ```bash
 brew upgrade --cask prism-agent
-```
-
-Удаление:
-
-```bash
 brew uninstall --cask prism-agent
 ```
 
